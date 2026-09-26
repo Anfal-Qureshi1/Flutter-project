@@ -1,18 +1,16 @@
 # Flutter Learning Projects
 
-A small collection of Flutter experiments created while learning Dart, Flutter UI development, state updates, dialogs, and interactive mobile interfaces.
+A small collection of Flutter practice work created while learning Dart, Flutter UI development, state updates, dialogs, and interactive mobile interfaces.
 
-> **Repository status:** Learning workspace. The Flashcard Quiz App includes readable source code in the repository. The Random Quote Generator folder currently contains build output rather than a complete reproducible source project, so it is not presented as a finished showcase app.
+> **Repository status:** Learning workspace. The Flashcard Quiz App has source code in this repository. An earlier Random Quote Generator experiment was also part of this workspace, but its reproducible source is not currently included.
 
-## Projects
-
-### 1. Flashcard Quiz App
+## Flashcard Quiz App
 
 A Flutter flashcard interface with a card-flip interaction.
 
-Implemented in the current source:
+Current features:
 
-- Question/answer flashcards
+- Question and answer flashcards
 - Tap-to-flip animation
 - Previous and next navigation
 - Add new flashcards
@@ -27,24 +25,20 @@ Main source:
 flashCard Quiz App/main.dart
 ```
 
-Dependency used for the flip interaction:
+The project uses:
 
 ```yaml
 flip_card: ^0.7.0
 ```
 
-> Cards are currently stored only in memory, so user-created cards are not persisted after the app closes.
+> Cards are stored in memory in the current version, so user-created cards are not saved after the app closes.
 
-### 2. Random Quote Generator App
-
-A second Flutter learning experiment is present in the repository, but the current GitHub snapshot mainly contains generated build files. The source required to reproduce and document the app properly is not currently included.
-
-## Run the Flashcard Quiz App
+## Run the app
 
 Requirements:
 
 - Flutter SDK
-- Dart SDK compatible with Dart 3
+- Dart 3 compatible SDK
 
 From the Flashcard app directory:
 
@@ -61,21 +55,17 @@ Flutter-project/
 │   ├── main.dart
 │   ├── pubspec.yaml
 │   └── README.md
-└── Random Quote Generator App/
-    └── build/
+├── .gitignore
+└── README.md
 ```
 
-## Why this repository exists
+Generated Flutter folders such as `build/` and `.dart_tool/` are intentionally excluded from version control.
 
-This repository documents hands-on Flutter practice rather than claiming production-ready mobile applications. It is useful as a record of UI experimentation and early mobile-development work.
+## Notes
 
-## Future cleanup
+This repository documents hands-on Flutter practice rather than production-ready mobile applications.
 
-- Add the missing Random Quote Generator source
-- Move generated build output out of version control
-- Use the standard Flutter `lib/main.dart` project layout
-- Add persistent storage to the flashcard app
-- Add widget tests
+Useful next improvements would be persistent flashcard storage, a standard Flutter project layout, and widget tests.
 
 ## Author
 
